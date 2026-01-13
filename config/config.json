@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "textoimg-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/textoimg/TextoimgWebPart.js",
+          "manifest": "./src/webparts/textoimg/TextoimgWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TextoimgWebPartStrings": "lib/webparts/textoimg/loc/{locale}.js"
+  }
+}

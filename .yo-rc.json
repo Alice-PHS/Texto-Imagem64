@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.17.1",
+    "sdksVersions": {},
+    "version": "1.22.1",
+    "libraryName": "textoimg",
+    "libraryId": "46658508-e7c6-4f2f-b010-35e30a8ec22b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "textoimg",
+    "solutionShortDescription": "textoimg description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

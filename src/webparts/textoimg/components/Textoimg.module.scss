@@ -1,0 +1,35 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.textoimg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  //line-height: 0; // Remove espaços vazios abaixo da imagem
+
+  .contentArea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+    div {
+      line-height: normal; // Garante que o container da imagem não tenha altura extra
+    }
+
+    img {
+      // Começa com 100% (para celulares)
+      width: 100%; 
+      max-width: 100%;
+      height: auto;
+      display: block;
+      padding-top: 15px;
+
+      // Se a tela for maior que 768px (Tablets e PCs), muda para 30%
+      @media (min-width: 768px) {
+        padding-top: 25px;
+        width: 30%;
+      }
+    }
+  }
+}
