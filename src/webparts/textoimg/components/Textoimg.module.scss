@@ -3,7 +3,8 @@
 .textoimg {
   width: 100%;
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  padding-left: 20px;
   overflow: hidden;
   //line-height: 0; // Remove espaços vazios abaixo da imagem
 
@@ -29,6 +30,7 @@
       @media (min-width: 768px) {
         padding-top: 25px;
         width: 30%;
+        margin-left: 20px;
       }
     }
   }

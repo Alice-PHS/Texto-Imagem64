@@ -3,7 +3,7 @@
   "solution": {
     "name": "textoimg-client-side-solution",
     "id": "46658508-e7c6-4f2f-b010-35e30a8ec22b",
-    "version": "1.0.1.3",
+    "version": "1.0.1.4",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
