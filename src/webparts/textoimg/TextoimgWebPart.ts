@@ -15,6 +15,7 @@ import { ITextoimgProps } from './components/ITextoimgProps';
 export interface ITextoimgWebPartProps {
   description: string;
   innerHtml: string;
+  titulo: string;
 }
 
 export default class TextoimgWebPart extends BaseClientSideWebPart<ITextoimgWebPartProps> {
@@ -26,6 +27,7 @@ export default class TextoimgWebPart extends BaseClientSideWebPart<ITextoimgWebP
     const element: React.ReactElement<ITextoimgProps> = React.createElement(
       Textoimg,
       {
+        titulo: this.properties.titulo,
         description: this.properties.description,
         innerHtml: this.properties.innerHtml,
         isDarkTheme: this._isDarkTheme,
@@ -110,6 +112,9 @@ export default class TextoimgWebPart extends BaseClientSideWebPart<ITextoimgWebP
             {
               groupName: strings.BasicGroupName,
               groupFields: [
+                PropertyPaneTextField('titulo', {
+                  label: 'Título da Página'
+                }),
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
                 }),

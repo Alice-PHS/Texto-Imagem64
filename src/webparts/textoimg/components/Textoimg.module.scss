@@ -35,3 +35,10 @@
     }
   }
 }
+
+.mainTitle {
+  font-size: 48px;  /* Ajuste este valor para ficar do tamanho que deseja */
+  font-weight: 700; /* Deixa em negrito */
+  margin-bottom: 20px; /* Dá um espaço para o conteúdo de baixo */
+  color: inherit; /* Usa a cor padrão do tema, ou coloque uma cor fixa ex: #333 */
+}

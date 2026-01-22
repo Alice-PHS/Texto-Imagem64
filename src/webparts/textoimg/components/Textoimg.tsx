@@ -4,11 +4,12 @@ import type { ITextoimgProps } from './ITextoimgProps';
 
 export default class Textoimg extends React.Component<ITextoimgProps> {
   public render(): React.ReactElement<ITextoimgProps> {
-    const { innerHtml } = this.props;
+    const { innerHtml,titulo } = this.props;
 
     const cleanHtml = (innerHtml || '').replace(/\\"/g, '"');
     return (
       <section className={styles.textoimg}>
+        {titulo && <h3 className={styles.mainTitle}>{titulo}</h3>}
         <div className={styles.contentArea}>
           {/* O conteúdo da API entrará aqui sem nenhuma div de saudação acima */}
           <div dangerouslySetInnerHTML={{ __html: cleanHtml }} />
